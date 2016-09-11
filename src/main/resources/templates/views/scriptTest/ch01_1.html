@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script>
+        var userInfo = {
+            userName:"Jo",
+            id:"NickJo"
+        };
+
+        // 기 본사용 자정보값
+        var defaults = {
+            age:33,
+            address:"Deagu",
+            nickName:"NickName!!!"
+        };
+
+        $(function(){
+            showInfo(userInfo);
+        });
+
+        function showInfo(userInfo){
+            console.log("###Before extend###");
+            $.each(userInfo, function (i,v) {
+               console.log("i: " + i + ", v: " + v);
+            });
+
+            // 기 본사용 자정보 와신 규사용 자정보 를합치기
+            userInfo = $.extend({}, defaults, userInfo);
+
+            console.log("###After extend###");
+            $.each(userInfo, function (i,v) {
+                console.log("i: " + i + ", v: " + v);
+            });
+        }
+    </script>
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+</html>
