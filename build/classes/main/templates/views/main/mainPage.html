@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html ng-app="App" lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <!--jquery-->
+    <link rel="stylesheet" type="text/css" media="all" href="css/jqGrid/ui.jqgrid.css" th:href="@{css/jqGrid/ui.jqgrid.css}"/>
+    <script type="text/javascript" src="js/jquery/jquery.js" th:src="@{js/jquery/jquery.js}"></script>
+    <script type="text/javascript" src="js/jquery-ui/jquery-ui.js" th:src="@{js/jquery-ui/jquery-ui.js}"></script>
+    <!--//jquery-->
+
+    <!--angular-->
+    <script type="text/javascript" src="js/angular/angular.js" th:src="@{js/angular/angular.js}"></script>
+    <!--//angular-->
+
+    <!--mui-->
+    <link href="//cdn.muicss.com/mui-latest/css/mui.min.css" rel="stylesheet" type="text/css" />
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <script src="//cdn.muicss.com/mui-latest/js/mui.min.js"></script>
+    <script src="js/script.js" th:src="@{js/script.js}"></script>
+    <!--//mui-->
+
+    <!--customScript-->
+    <script type="text/javascript" src="js/main/mainPage.js" th:src="@{js/main/mainPage.js}" ></script>
+    <!--//customScript-->
+    <title>Title</title>
+</head>
+<body ng-controller="mainPageCtrl">
+<div id="sidedrawer" class="mui--no-user-select">
+    <div id="sidedrawer-brand" class="mui--appbar-line-height">
+        <span class="mui--text-title">{{ message }}</span>
+    </div>
+    <div class="mui-divider"></div>
+    <ul>
+        <li>
+            <strong>Category 1</strong>
+            <ul>
+                <li><a href="#">Item 1</a></li>
+                <li><a href="#">Item 2</a></li>
+                <li><a href="#">Item 3</a></li>
+            </ul>
+        </li>
+        <li>
+            <strong>Category 2</strong>
+            <ul>
+                <li><a href="#">Item 1</a></li>
+                <li><a href="#">Item 2</a></li>
+                <li><a href="#">Item 3</a></li>
+            </ul>
+        </li>
+        <li>
+            <strong>Category 3</strong>
+            <ul>
+                <li><a href="#">Item 1</a></li>
+                <li><a href="#">Item 2</a></li>
+                <li><a href="#">Item 3</a></li>
+            </ul>
+        </li>
+    </ul>
+</div>
+<header id="header">
+    <div class="mui-appbar mui--appbar-line-height">
+        <div class="mui-container-fluid">
+            <a class="sidedrawer-toggle mui--visible-xs-inline-block mui--visible-sm-inline-block js-show-sidedrawer">☰</a>
+            <a class="sidedrawer-toggle mui--hidden-xs mui--hidden-sm js-hide-sidedrawer">☰</a>
+            <span class="mui--text-title mui--visible-xs-inline-block mui--visible-sm-inline-block">Brand.io</span>
+        </div>
+    </div>
+</header>
+<div id="content-wrapper">
+    <div class="mui--appbar-height"></div>
+    <div class="mui-container-fluid">
+        <div class="mui-divider"></div>
+        <br/>
+        <div class="mui--text-headline">MUI Acquires New Features</div>
+        <div class="mui--text-black-54">By <a href="#">Team MUI</a> 3 days ago</div>
+        <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In facilisis aliquam ipsum sed dignissim. Sed ac accumsan odio. Vivamus tristique dignissim neque. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nunc cursus felis nec purus condimentum vestibulum. Donec mauris nisi, sollicitudin eget iaculis id, suscipit id odio. <a href="#">Read more...</a></div>
+        <br/>
+        <br/>
+        <div class="mui-divider"></div>
+        <br/>
+        <div class="mui--text-headline">MUI Acquires New Features</div>
+        <div class="mui--text-black-54">By <a href="#">Team MUI</a> 1 week ago</div>
+        <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In facilisis aliquam ipsum sed dignissim. Sed ac accumsan odio. Vivamus tristique dignissim neque. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nunc cursus felis nec purus condimentum vestibulum. Donec mauris nisi, sollicitudin eget iaculis id, suscipit id odio. <a href="#">Read more...</a></div>
+        <br/>
+        <br/>
+        <div class="mui-divider"></div>
+        <div class="mui--text-headline">MUI Acquires New Features</div>
+        <div class="mui--text-black-54">By <a href="#">Team MUI</a> 3 weeks ago</div>
+        <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In facilisis aliquam ipsum sed dignissim. Sed ac accumsan odio. Vivamus tristique dignissim neque. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nunc cursus felis nec purus condimentum vestibulum. Donec mauris nisi, sollicitudin eget iaculis id, suscipit id odio. <a href="#">Read more...</a></div>
+        <br/>
+        <div class="mui-divider"></div>
+        <br/>
+        <br/>
+    </div>
+
+</div>
+
+<!--<footer id="footer">
+    <div class="mui-container-fluid">
+        <br/>
+        Designed by Nick
+    </div>
+</footer>-->
+</body>
+</html>

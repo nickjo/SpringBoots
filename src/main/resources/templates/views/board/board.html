@@ -1,17 +1,16 @@
 <!DOCTYPE html>
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
-    <head>
+<head>
     <meta charset="UTF-8"/>
     <title>Title</title>
 </head>
-<script th:src="@{/webjars/jquery/3.1.0/dist/jquery.min.js}"></script>
-<script th:src="@{/js/board/board.js}"></script>
 <body>
+<h1>board.html</h1>
+
 <table>
-    <tr th:each="name1 : ${name}">
-        <td th:text="${name1}">option</td>
+    <tr th:each="board1 : ${board}">
+        <td th:text="${board1}">option</td>
     </tr>
 </table>
-
 </body>
 </html>

@@ -1,0 +1,33 @@
+{
+  "name": "SpringBootProject06",
+  "authors": [
+    "origin <nickjo180@gmail.com>"
+  ],
+  "description": "",
+  "main": "main",
+  "keywords": [
+    "main"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.1.1",
+    "angular": "^1.5.8",
+    "semantic": "semantic-ui#^2.2.4",
+    "jqGrid": "jqgrid#^5.1.1"
+  },
+  "install": {
+    "path": {
+      "css": "static/css",
+      "js": "static/js"
+    }
+  }
+}
