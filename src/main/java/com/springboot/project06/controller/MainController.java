@@ -38,7 +38,7 @@ public class MainController {
         return "views/mainPage";
     }
 
-    @RequestMapping("/selectMainPage")
+    @RequestMapping("/selectMainPageData")
     public void selectMainPage(Model model){
         model.addAttribute("board", boardDao.findAll());
 

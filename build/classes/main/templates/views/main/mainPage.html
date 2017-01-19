@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html ng-app="App" lang="en" xmlns:th="http://www.thymeleaf.org">
+<html ng-app="mui" lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
@@ -11,13 +11,16 @@
     <!--//jquery-->
 
     <!--angular-->
-    <script type="text/javascript" src="js/angular/angular.js" th:src="@{js/angular/angular.js}"></script>
+    <!--<script type="text/javascript" src="js/angular/angular.js" th:src="@{js/angular/angular.js}"></script>-->
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.6.0/angular.min.js"></script>
     <!--//angular-->
 
     <!--mui-->
-    <link href="//cdn.muicss.com/mui-latest/css/mui.min.css" rel="stylesheet" type="text/css" />
+    <link href="//cdn.muicss.com/mui-0.9.6/css/mui.min.css" rel="stylesheet" type="text/css" />
+    <script src="//cdn.muicss.com/mui-0.9.6/angular/mui-angular.min.js"></script>
+    <!--<link href="//cdn.muicss.com/mui-latest/css/mui.min.css" rel="stylesheet" type="text/css" />-->
     <link href="css/style.css" rel="stylesheet" type="text/css" />
-    <script src="//cdn.muicss.com/mui-latest/js/mui.min.js"></script>
+    <!--<script src="//cdn.muicss.com/mui-latest/js/mui.min.js"></script>-->
     <script src="js/script.js" th:src="@{js/script.js}"></script>
     <!--//mui-->
 
@@ -94,7 +97,7 @@
         <br/>
         <br/>
     </div>
-
+    {{ mainPageSc.getBoard }}
 </div>
 
 <!--<footer id="footer">
